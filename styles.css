@@ -1,0 +1,884 @@
+/* -----------> //CSS RESET <----------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* -----------> //NAVBAR <----------- */
+
+.logo {
+    cursor: pointer;
+    height: 60px;
+    width: 100px;
+    filter: invert(100%);
+    margin-left: 100px;
+}
+
+.logo:hover {
+    filter: invert(51%) sepia(89%) saturate(1985%) hue-rotate(149deg) brightness(100%) contrast(101%);
+    transition: 0.2s;
+}
+
+nav {
+    position: fixed;
+    font-family: 'Fjalla One', sans-serif;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.25), transparent);
+    z-index: 1;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2.5px;
+}
+
+li a:hover {
+    color: #00bcd4;
+    transition: 0.3s;
+}
+
+ul {
+    text-transform: uppercase;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.sign-up {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    color: white;
+    letter-spacing: 2px;
+    margin-right: 100px;
+    background-color: transparent;
+    border: 1px solid #00bcd4;
+    border-radius: 25px;
+    padding: 5px; 
+}
+
+.sign-up:hover {
+    background-color: #00bcd4;
+    transition: 0.3s;
+}
+
+.checkbtn {
+    display: flex;
+    font-size: 30px;
+    color: white;
+    justify-content: flex-end;
+    display: none;
+    align-items: center;
+}
+
+#check {
+    display: none;
+}
+
+/* -----------> //MAIN SECTION <----------- */
+.main-div {
+    background: url('./assets/ps5-hero.jpg') center center/cover no-repeat;
+    height: 100vh;
+    width: 100%;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.35);
+}
+
+.hero-section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 120px;
+}
+
+.hero-section h1 {
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 6px;
+    margin-top: 20px;
+    color: white;
+    font-size: 55px;
+}
+
+.hero-section p {
+    font-family: 'Montserrat', sans-serif;
+    margin: 25px 300px 40px;
+    color: white;
+    font-size: 18x;
+    letter-spacing: 1.25px;
+    line-height: 25px;
+}
+
+.primary-btn, .secondary-btn {
+    margin: 0px 8px 0px;
+}
+
+.primary-btn {
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border: 1px solid #00bcd4;
+    background-color: #00bcd4;
+    border-radius: 5px;
+    padding: 10px 25px 10px;
+}
+
+.secondary-btn {
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #00bcd4;
+    padding: 10px 25px 10px;
+}
+
+.primary-btn:hover {
+    border: 1px solid #00bcd4;
+    background-color: transparent;
+    transition: 0.4s;
+}
+
+.secondary-btn:hover {
+    border: 1px solid #00bcd4;
+    background-color: #00bcd4;
+    transition: 0.4s;
+}
+
+/* -----------> //FEATURES <----------- */
+.features-container {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 75px;
+
+}
+
+.games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.games {
+    height: 30px;
+    margin: 20px 30px;
+    opacity: 50%;
+}
+
+.feature-header {
+    font-size: 40px;
+    margin-top: 45px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.feature-subheader {
+    margin: 30px 150px;
+    line-height: 35px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+    padding: 0 30px 45px;
+}
+
+.feat-1, .feat-2, .feat-3{
+    padding: 0 50px;
+}
+
+.feat-logo {
+    border-radius: 55px;
+    font-size: 25px;
+    padding: 20px;
+    background-color: #00bcd4;
+    color: white;
+}
+
+.feat-logo:hover{
+    transform: scale(1.25);
+    transition: 0.3s;
+}
+
+.feat-text {
+    margin-top: 30px;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+/* -----------> //DESCRIPTION 1 <----------- */
+.desc1-container {
+    display: flex;
+    background-color: #e4e6eb;
+    box-shadow: inset 0px 0px 40px  rgba(0,0,0,0.15);
+}
+
+.desc1-text {
+    margin-top: 50px;
+    margin-left: 160px;
+    margin-right: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.desc1-container h1 {
+    margin-bottom: 10px;
+}
+
+.desc1-container p {
+    margin-bottom: 30px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.desc1-container img {
+    height: 550px;
+    margin-right: 85px;
+    margin-top: 30px;
+    animation: floating ease 3.5s infinite;
+}
+
+@keyframes floating {
+	0% {
+		transform: translate(0%, 0%) rotate(360deg);
+	}
+	25% {
+		transform: translate(0%, 5%) rotate(360deg);
+	}
+	50% {
+		transform: translate(0%, 0%) rotate(360deg);
+	}
+	75% {
+		transform: translate(0%, 5%) rotate(360deg);
+	}
+	100% {
+		transform: translate(0%, 0%) rotate(360deg);
+	}
+}
+
+/* -----------> //INTERFACE<----------- */
+
+.interface-container {
+    padding: 50px 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+
+.interface-1, .interface-2 {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.interface-container img{
+    height: 350px;
+}
+
+.interface-container h1 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 25px 0 10px;
+}
+
+.interface-container p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    line-height: 24px;
+}
+
+
+/* -----------> //DESCRIPTION 2 <----------- */
+.desc2-container {
+    display: flex;
+    margin-top: -30px;
+}
+.desc2-text {
+    margin-top: 120px;
+    margin-left: 60px;
+    margin-right: 140px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.desc2-container h1 {
+    margin-bottom: 10px;
+}
+
+.desc2-container p {
+    margin-bottom: 30px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.desc2-container img {
+    height: 675px;
+    margin-left: 55px;
+    margin-bottom: -25px;
+    z-index: -1;
+}
+
+.desc2-container a {
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border: 1px solid #00bcd4;
+    background-color: #00bcd4;
+    border-radius: 25px;
+    padding: 10px 25px 10px;
+}
+
+.desc2-container a:hover {
+    background-color: #02a0b5;
+    outline: 2px solid #00bcd4;
+    outline-offset: 3px;
+    transition: 0.2s;
+}
+
+/* -----------> //PAYMENTS <----------- */
+.payments-container {
+    background-color: #e4e6eb;
+    box-shadow: inset 0px 0px 40px  rgba(0,0,0,0.15);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.payments-container h1 {
+    margin: 15px 0;
+}
+
+.payments-subheading {
+    margin: 0px 240px 60px;
+}
+
+.payments {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 180px;
+}
+
+.payment-option {
+    border: 1px solid lightgrey;
+    padding: 20px;
+}
+
+.payment-option h4 {
+    color: #00bcd4;
+    font-weight: bolder;
+}
+
+.payment-option h2 {
+    margin: 15px 0;
+    font-size: 32px;
+}
+
+.payment-option p {
+    margin: 50px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.payment-option a {
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border: 1px solid #00bcd4;
+    background-color: #00bcd4;
+    border-radius: 25px;
+    padding: 8px 15px 8px;
+}
+
+.payment-option a:hover {
+    background-color: #02a0b5;
+    outline: 2px solid #00bcd4;
+    outline-offset: 3px;
+    transition: 0.2s;
+}
+
+
+/* -----------> //FORM <----------- */
+.contact-container {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 120px;
+    font-weight: bolder;
+}
+
+.contact h1 {
+    margin: 5px 0px 20px;
+}
+
+.contact h3 {
+    margin-bottom: 10px;
+}
+
+.phone-heading {
+    margin-top: 30px;
+}
+
+.contact p {
+    letter-spacing: 1px;
+    margin: 5px 0px;
+}
+
+.connect {
+    padding-top: 20px;
+}
+
+.socmed {
+    cursor: pointer;
+    color: #7c97c6;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.socmed:hover {
+    color: #5174af;
+}
+
+form {
+    width: 50%;
+    background-color: #58b5c1;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+}
+
+.input {
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 5px 0 15px;
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+#submit {
+    color: white;
+    margin: 10px 0px 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 5px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+    letter-spacing: 1px;
+}
+
+#submit:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.3s;
+}
+
+/* -----------> //FOOTER <----------- */
+
+#footer {
+    width: 100%;
+    background-color: #0e0e1b;
+}
+
+#footer-text{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+    padding: 12px 0;
+}
+
+
+/* -----------> //RESPONSIVENESS <----------- */
+
+@media (max-width: 914px){
+    .hero-section p {
+        margin: 10px 40px 25px;
+    }
+
+    .hero-section h1 {
+        font-size: 35px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul, .sign-up {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 60px;
+    }
+
+    .checkbtn {
+        display: block;
+        margin-right: 60px;
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 60px 20px;
+
+    }
+
+    .feature-subheader {
+        margin: 25px 15px;
+        line-height: 25px;
+    }
+
+    .feat-logo {
+        font-size: 20px;
+    }
+
+    .feat-text {
+        margin-top: 25px;
+        margin-bottom: 20px;
+        line-height: 25px;
+        font-weight: bold;
+    }
+
+    .desc1-container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .desc1-container .desc1-text {
+        margin: 50px 50px 0px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    
+    .desc1-container h1 {
+        margin-bottom: 10px;
+    }
+    
+    .desc1-container p {
+        margin-bottom: 30px;
+        line-height: 24px;
+    }
+    
+    .desc1-container img {
+        cursor: pointer;
+        height: 300px;
+        margin: -10px 0px 0px;
+    }
+
+    .interface-container {
+        padding: 20px 20px 0px;
+        display: grid;
+    }
+    
+    .interface-1, .interface-2 {
+        margin: 15px 15px 0px;
+    }
+    
+    .interface-container img{
+        height: 180px;
+    }
+    
+    .interface-container p {
+        display: none;
+    }
+
+    .desc2-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .desc2-container img{
+        display: none;
+    }
+
+    .desc2-text {
+        margin: 80px;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    .payments-container {
+        padding: 50px;
+    }
+    
+    .payments-container h1 {
+        margin: 15px 0;
+    }
+    
+    .payments-subheading {
+        margin: 0px 70px 30px;
+    }
+    
+    .payments {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        margin: 0px 30px;
+    }
+    
+    .payment-option p {
+        margin: 30px 20px;
+    }
+
+    .form-container {
+        display: block;
+    }
+    
+    .contact-container {
+        padding: 50px;
+    }
+
+}
+
+@media (max-width: 550px){
+    .hero-section h1 {
+        font-size: 35px;
+    }
+
+    .hero-section p {
+        font-size: 12px;
+        margin: 10px 15px 25px;
+    }
+
+    .btn-div {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        margin: 0px 50px 0px;
+    }
+
+    .primary-btn {
+        margin-bottom: 10px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul, .sign-up {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    .checkbtn {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .games {
+        height: 16px;
+        margin: 20px 10px;
+    }
+
+    .features-container {
+        padding: 0px 25px;
+        height: 100%;
+    }
+
+    .features {
+        margin: 25px 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .feature-header {
+        font-size: 22px;
+        margin: 35px 0 10px;
+    }
+
+    .feature-subheader {
+        display: none;
+    }
+
+    .feat-logo {
+        font-size: 15px;
+        padding: 20px;
+    }
+
+    .feat-1, .feat-2, .feat-3{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .feat-text {
+        font-size: 12px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        line-height: 25px;
+        font-weight: bold;
+    }
+
+    .desc1-container .desc1-text {
+        margin: 50px 35px 0px;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    
+    .desc1-container h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    
+    .desc1-container p {
+        font-size: 14px;
+        margin-bottom: 30px;
+        line-height: 24px;
+    }
+    
+    .desc1-container img {
+        cursor: pointer;
+        height: 250px;
+        margin: -10px 0px 0px;
+    }
+
+    .desc1-container img {
+        cursor: pointer;
+        height: 300px;
+        margin: -10px 0px 0px;
+    }
+
+    .desc2-container {
+        margin-top: -5px;
+    }
+
+    .desc2-container h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    
+    .desc2-container p {
+        font-size: 14px;
+        margin-bottom: 30px;
+        line-height: 24px;
+    }
+
+    .desc2-text {
+        margin: 30px;
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+    .desc2-container a {
+        font-size: 12px;
+    }
+
+    .interface-container {
+        padding: 20px 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .interface-1, .interface-2 {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 15px 0px;
+    }
+    
+    .interface-container img{
+        height: 180px;
+    }
+
+    .interface-container h1 {
+        font-size: 22px;
+        margin: 5px 0 10px;
+    }
+
+    .payments-container {
+        padding: 20px;
+    }
+    
+    .payments-container h1 {
+        font-size: 22px;
+    }
+    
+    .payments-subheading {
+        font-size: 14px;
+        margin: 0px 10px 30px;
+    }
+    
+    .payments {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        margin: 0px 0px;
+    }
+
+    .payment-option h4{
+        font-size: 15px;
+    }
+
+    .payment-option h2{
+        font-size: 18px;
+    }
+    
+    .payment-option p {
+        font-size: 12px;
+        margin: 15px 0px;
+    }
+
+    .contact-container {
+        padding: 25px;
+        flex-direction: column;
+    }
+
+    .contact h1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    form {
+        margin-top: 35px;
+        width: 100%;
+    }
+
+    #footer-text {
+        font-size: 12px;
+    }
+    
+}
+

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Product Landing Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Fjalla+One&family=Montserrat:wght@200&family=Oswald&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/8077b29d9a.js" crossorigin="anonymous"></script>
+
+
+    <!-- EXTERNAL CSS -->
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles.css'>
+
+</head>
+<body>
+    <main class="main-div">
+        <nav>
+            <a href="#"><img src="./assets/ps5-logo.png" class="logo" /></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#payments">Payment</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <div class="sign-up">SIGN UP</div>
+            
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </nav>
+
+        <section class="hero-section">
+            <h1>PLAY HAS NO LIMITS</h1>
+            <p>A powerful console offering a sublime current-gen gaming experience. Its library of exlcusive games makes fantastic use of the DualSense controller, 3D Audio, and the console's lightning-fast SSD.</p> 
+            <div class="btn-div">
+                <a href="#payments" class="primary-btn">PURCHASE NOW</a>
+                <a href="#about" class="secondary-btn">LEARN MORE</a>
+            </div>
+        </section>
+    </main>
+
+    <div class="games-container" id="about">
+        <img src="./assets/fifa.png" class="games" />
+        <img src="./assets/horizon.png" class="games" />
+        <img src="./assets/tlou.png" class="games" />
+        <img src="./assets/nba.png" class="games" />
+        <img src="./assets/resident.png" class="games" />
+        <img src="./assets/final-fantasy.png" class="games" />
+        <img src="./assets/genshin.png" class="games" />
+    </div>
+
+    <div class="features-container">
+        
+        <h1 class="feature-header">The future of console gaming is here</h1>
+        <h3 class="feature-subheader">The PS5 is a genuine leap forward for console gaming, offering gorgeous 4K performance, stunningly fast load times and a truly game-changing controller that makes playing games more immersive and tactile than ever.</h3>
+
+        <div class="features">
+            <div class="feat-1">
+                <i class="fa-solid fa-bolt feat-logo" id="test"></i>
+                <p class="feat-text">Experience lightning-fast loading with an ultra-high speed SSD.</p>
+            </div>
+
+            <div class="feat-2">
+                <i class="fa-solid fa-tv feat-logo"></i></i>
+                <p class="feat-text">Deeper immersion with support for haptic feedback, adaptive triggers.</p>
+            </div>
+
+            <div class="feat-3">
+                <i class="fa-solid fa-gamepad feat-logo"></i></i>
+                <p class="feat-text">3D Audio, and an all-new generation of incredible PlayStation games.</p>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="desc1-container"  id="features">
+        <div class="desc1-text">
+        <h1>Haptic Feedback</h1>
+        <p>Feel physically responsive feedback to your in-game actions with dual actuators which replace traditional rumble motors. In your hands, these dynamic vibrations can simulate the feeling of everything from environments to the recoil of different weapons.</p>
+        <h1>Adaptive Triggers</h1>
+        <p>Experience varying levels of force and tension as you interact with your in-game gear and environments. From pulling back an increasingly tight bowstring to hitting the brakes on a speeding car, feel physically connected to your on-screen actions.</p>
+        <h1>Create button</h1>
+        <p>Capture and broadcast3 your most epic gaming moments with the create button. Building on the success of the pioneering SHARE button, "create" offers players more ways to produce gaming content and broadcast their adventures live to the world.</p>
+        </div>
+        <img src="./assets/controller.png" />
+    </div>
+
+    <div class="interface-container">
+        <div class="interface-1">
+            <img src="./assets/interface-1.png" />
+            <h1>Game Presets</h1>
+            <p>Players can choose saved game presets for all supported games, like inverted y-axis and subtitles.</p>
+        </div>
+
+        <div class="interface-2">
+            <img src="./assets/interface-2.png" />
+            <h1>Gamelists</h1>
+            <p>Organize your game collection into personalized Gamelists. You can group your favourite disc, digital or streaming titles or genres together in lists that you can name and access via the "Your Collection" tab of the game library.</p>
+        </div>
+    </div>
+
+    <div class="desc2-container">
+
+        <img src="./assets/hard-drive.png" />
+
+        <div class="desc2-text">
+            <h1>External USB Drive Compatibility</h1>
+            <p>PS5 consoles can store comaptible PS4 and PS5 games to USB drives that support SuperSpeed USB. That means you can save space on the internal Ultra-High Speed SSD, and save time by reinstalling PS5 games from the external USB drive, instead of redownloading them or installing from a disc.</p>
+
+            <p>When you're ready to play a PS5 game that's on an external USB drive, simply transfer the game back to the internal SSD via the Options Menu within the Library. You can play PS4 games directly from an external USB drive, or from the internal SSD.</p>
+
+            <a href="#">READ MORE</a>
+
+            </div>
+    </div>
+
+    <div class="payments-container" id="payments">
+        <h1>Choose Your Payment Option</h1>
+        <p class="payments-subheading">All non-upfront payment plans are subject to 2 years of full payment. Should you decide to switch to upfront in the middle of your ongoing payment plan, please contact CS.</p>
+        <div class="payments">
+        <div class="payment-option">
+            <h4>MONTHLY</h4>
+            <h2>₱2,250</h2>
+            <p>With HDMI and External Hard drive</p>
+            <p>Free 2 Games of your choice</p>
+            <p>1-year Warranty</p>
+            <p>1-year PSN Plus Subscription</p>
+            <a href="#">PAY NOW</a>
+        </div>
+
+        <div class="payment-option">
+            <h4>QUARTERLY</h4>
+            <h2>₱6,500</h2>
+            <p>With HDMI and External Hard drive</p>
+            <p>Free 2 Games of your choice</p>
+            <p>1-year Warranty</p>
+            <p>1-year PSN Plus Subscription</p>
+            <a href="#">PAY NOW</a>
+        </div>
+
+        <div class="payment-option">
+            <h4>YEARLY</h4>
+            <h2>₱27,500</h2>
+            <p>With HDMI and External Hard drive</p>
+            <p>Free 2 Games of your choice</p>
+            <p>1-year Warranty</p>
+            <p>1-year PSN Plus Subscription</p>
+            <a href="#">PAY NOW</a>
+        </div>
+
+        <div class="payment-option">
+            <h4>UPFRONT</h4>
+            <h2>₱50,000</h2>
+            <p>With HDMI and External Hard drive</p>
+            <p>Free 2 Games of your choice</p>
+            <p>1-year Warranty</p>
+            <p>1-year PSN Plus Subscription</p>
+            <a href="#">PAY NOW</a>
+        </div>
+        </div>
+    </div>
+
+    <div class="contact-container">
+
+        <div class="contact" id="contact">
+            <h1>CONTACT US</h1>
+            <h3>Email</h3>
+            <p>sonyph@mail.com</p>
+            <h3 class="phone-heading">Phone</h3>
+            <p>+63-900-000-0000</p>
+            <p>+63-900-000-0123</p>
+            <p>+63-900-000-4321</p>
+
+            <h1 class="connect">STAY CONNECTED</h1>
+            <div class="socials">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook socmed"></i></a>
+
+                <a href="https://www.twitter.com/" target="_blank"><i class="fa-brands fa-twitter socmed"></i></a>
+
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram socmed"></i></a>
+                
+                <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin socmed"></i></a>
+            </div>
+        </div>
+
+        <form action="./page.html" onsubmit="getInput()">
+            <h2>Order Form</h2>
+
+            <div class="form-container">
+            <div>    
+            <label for="fullname" class="labels">Name</label>
+            <input type="text" name="fullname" id="fullname" placeholder="Enter Your Name Here" class="input">
+            </div>
+
+            <div>    
+            <label for="email" class="labels">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Enter Your Email Here" required class="input">
+            </div>
+
+            <div>   
+            <label for="number" class="labels">Contact No.</label>
+            <input type="text" name="number" id="number" placeholder="Enter Your Number Here" required class="input">
+            </div>     
+
+            <div>      
+            <label for="color" class="color">Console Color</label>
+            <select name="color" class="input" id="color">
+                <option value="white">White</option>
+                <option value="white">Black</option>
+                <option value="colored">Colored</option>
+                <option value="random">Random</option>
+            </select>
+            </div>  
+           
+            </div>
+
+            <label for="message" class="color">Message</label>
+            <textarea name="message" class="input" rows="7" id="message"></textarea>
+
+            <input type="submit" value="PLACE ORDER" id="submit">
+        </form>
+    </div>
+
+    <footer id="footer">
+        <p id="footer-text">
+            © Copyright 2022 Powered by HTML & CSS
+        </p>
+    </footer>
+
+</body>
+</html>

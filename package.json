@@ -1,0 +1,17 @@
+{
+  "name": "product-landing-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "npx sass input.scss:output.css",
+    "sass-watch" : "npx sass --watch input.scss:output.css",
+    "hello" : "Hello world"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.56.1"
+  }
+}
